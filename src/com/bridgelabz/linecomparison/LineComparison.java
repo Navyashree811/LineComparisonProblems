@@ -1,6 +1,6 @@
 /*
- * As a fan of geometry, I want to check equality of two lines
- * based on the end points,so that I know when two lines are the equal.
+ *UC3:  As a fan of geometry, I want to compare two lines based on the end points,
+ * so that I know one line is equal, greater or less than the other line.
  */
 package com.bridgelabz.linecomparison;
 
@@ -36,11 +36,13 @@ public class LineComparison {
 		System.out.printf("Length of First Line is : %.2f %n", lenghtOfLine1);
 		System.out.printf("Length of Second Line is : %.2f %n", lenghtOfLine2);
 
-		boolean ans = lenghtOfLine1.equals(lenghtOfLine2);
-		if (ans) {
-			System.out.println("Both Lines are Equal");
+		int result = lenghtOfLine1.compareTo(lenghtOfLine2);
+		if (result > 0) {
+			System.out.println("Length of First end points is Greater than Length of Second end Points");
+		} else if (result < 0) {
+			System.out.println("Length of First end points is Less than Length of Second end Points");
 		} else {
-			System.out.println("Both Lines are not Equal ");
+			System.out.println("Both Lines are Equal ");
 		}
 	}
 }
