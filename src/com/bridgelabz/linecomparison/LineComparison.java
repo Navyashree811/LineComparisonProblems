@@ -1,5 +1,5 @@
 /*
- * As a fan of geometry, I want to model a lien based on a point 
+ * As a fan of geometry, I want to model a line based on a point 
  * consisting of (x,y) co-ordinates using the Cartesian system, so that I can 
  * Calculate its length.
  */
